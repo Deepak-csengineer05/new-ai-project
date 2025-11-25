@@ -1,0 +1,72 @@
+/* Global Styles */
+body {
+    background-color: #0e1117;
+    color: #fafafa;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Sidebar Styling */
+[data-testid="stSidebar"] {
+    background-color: #161b22;
+    border-right: 1px solid #30363d;
+}
+
+/* Card Styling */
+.skill-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-color: #7c4dff;
+}
+
+/* Headers */
+h1, h2, h3 {
+    font-weight: 700;
+    background: linear-gradient(90deg, #7c4dff, #18ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Buttons */
+.stButton > button {
+    background: linear-gradient(90deg, #7c4dff, #651fff);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    box-shadow: 0 0 15px rgba(124, 77, 255, 0.5);
+    transform: scale(1.02);
+}
+
+/* Progress Bar */
+.stProgress > div > div > div > div {
+    background: linear-gradient(90deg, #18ffff, #7c4dff);
+}
+
+/* Custom Classes for Streamlit Markdown */
+.highlight-text {
+    color: #18ffff;
+    font-weight: bold;
+}
+
+.error-text {
+    color: #ff5252;
+}
+
+.success-text {
+    color: #69f0ae;
+}
